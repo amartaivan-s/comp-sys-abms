@@ -1,1 +1,276 @@
-<!DOCTYPE html> <html> <head> <meta charset="UTF-8"> <title>Agent-Based Modeling showcase </title> <style> body { font-family: sans-serif; padding: 2rem; } img, video { max-width: 100%; height: auto; } .section { margin-bottom: 2rem; } </style> </head> <body> <p><a href="https://amartaivan-s.github.io/">🏠 Home</a></p> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Complex Systems Modeling via Agent-Based Modeling and Simulation (ABMS)</title>
+<style>
+  :root {
+    --accent: #007acc;
+    --ink: #333;
+    --bg: #fafafa;
+    --border: #e0e0e0;
+  }
+
+  body {
+    font-family: "Noto Sans", Arial, sans-serif;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 24px;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.7;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  header h1 {
+    font-size: 2em;
+    color: var(--ink);
+  }
+
+  header p {
+    font-size: 1.1em;
+    color: #555;
+  }
+
+  h2 {
+    color: var(--accent);
+    margin-top: 2.2em;
+  }
+
+  .lang-switch {
+    text-align: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+
+  .lang-switch a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .lang-switch a:hover {
+    text-decoration: underline;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 22px;
+    margin-top: 24px;
+  }
+
+  .card {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: transform 0.15s ease;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    transform: translateY(-5px);
+  }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .card-content {
+    padding: 16px;
+  }
+
+  .card-content h3 {
+    margin: 0 0 8px 0;
+    color: var(--ink);
+  }
+
+  .card-content p {
+    color: #666;
+    font-size: 0.95em;
+  }
+
+  .details-link {
+    display: inline-block;
+    margin-top: 12px;
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  .details-link:hover {
+    text-decoration: underline;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 60px;
+    font-size: 0.9em;
+    color: #777;
+  }
+
+  .citation a {
+    color: var(--accent);
+  }
+
+  ul.examples {
+    list-style: disc;
+    margin-left: 2em;
+  }
+
+  .quote {
+    font-style: italic;
+    color: #555;
+    border-left: 3px solid var(--accent);
+    padding-left: 12px;
+    margin: 12px 0;
+  }
+</style>
+</head>
+<body>
+
+<p><a href="https://amartaivan-s.github.io/">🏠 Home</a></p>
+<div class="lang-switch">
+  <a href="index_mn.html">Монгол хэл</a>
+</div>
+
+<header>
+  <h1>🧩 Complex Systems Modeling via Agent-Based Modeling and Simulation (ABMS)</h1>
+  <p>
+    Complex systems are everywhere — from the movement of pedestrians and markets
+    to ecosystems and social networks. 
+    Agent-Based Modeling and Simulation (ABMS) provides a computational microscope 
+    for understanding how simple individual actions lead to emergent, large-scale phenomena.
+  </p>
+</header>
+
+<section>
+  <h2>What Are Complex Systems?</h2>
+  <p>
+    A <strong>complex system</strong> consists of many interacting parts (agents) 
+    whose collective behavior cannot be simply inferred from the properties of the parts themselves.
+    These systems exhibit <em>emergence</em>, <em>adaptation</em>, and <em>nonlinearity</em>, 
+    making them distinct from merely complicated or mechanistic systems.
+  </p>
+
+  <div class="quote">
+    “More is different.” — <strong>P. W. Anderson (1972)</strong>
+  </div>
+
+  <p>
+    The study of complex systems seeks to understand how order, patterns, and intelligence
+    emerge spontaneously through local interactions and feedback loops.
+    Such systems exist across disciplines: biology, economics, sociology, physics, and computer science.
+  </p>
+
+  <p><strong>Key properties of complex systems include:</strong></p>
+  <ul class="examples">
+    <li>Nonlinearity — small changes can lead to large effects.</li>
+    <li>Feedback loops — mutual influence and co-adaptation among components.</li>
+    <li>Emergence — macroscopic patterns arising without centralized control.</li>
+    <li>Self-organization — spontaneous formation of structures or behaviors.</li>
+    <li>Adaptivity — agents learn, evolve, or respond to changing environments.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Examples of Complex Systems</h2>
+  <ul class="examples">
+    <li><strong>Social systems:</strong> opinion dynamics, cooperation, cultural diffusion.</li>
+    <li><strong>Economic systems:</strong> market fluctuations, consumer behavior, supply networks.</li>
+    <li><strong>Biological systems:</strong> ecosystems, immune networks, collective animal behavior.</li>
+    <li><strong>Urban and mobility systems:</strong> pedestrian flow, traffic dynamics, city growth.</li>
+    <li><strong>Technological systems:</strong> distributed robotics, Internet, AI agent ecosystems.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Prototype Models — Complex Systems via ABMS</h2>
+  <div class="grid">
+
+    <div class="card">
+      <a href="prototypes/crossing_eng.html">
+        <img src="images/crossing_thumb.gif" alt="Crossing Behavior Simulation" />
+      </a>
+      <div class="card-content">
+        <h3>Pedestrian Crossing Behavior Modeling</h3>
+        <p>
+          Models how heterogeneous pedestrians decide when and where to cross
+          based on local visibility, vehicle flow, and social influence.
+          The simulation explores how cooperative and risky crossing behaviors
+          collectively shape traffic efficiency and safety.
+        </p>
+        <a href="prototypes/crossing_eng.html" class="details-link">▶ Explore Demo</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <a href="prototypes/purchase_eng.html">
+        <img src="images/purchase_thumb.gif" alt="Customer Purchase Behavior Simulation" />
+      </a>
+      <div class="card-content">
+        <h3>Customer Purchase Behavior Modeling</h3>
+        <p>
+          Simulates how individual customer decisions — influenced by peers,
+          product visibility, and marketing — lead to emergent demand patterns.
+          Demonstrates adaptive markets and feedback-driven product popularity cycles.
+        </p>
+        <a href="prototypes/purchase_eng.html" class="details-link">▶ Explore Demo</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Most Influential Works in Complex Systems Science</h2>
+  <p class="citation">
+    <strong>P. W. Anderson (1972).</strong>  
+    “More is different.”  
+    <em>Science, 177(4047), 393–396.</em>  
+    <a href="https://doi.org/10.1126/science.177.4047.393" target="_blank">DOI link</a><br><br>
+
+    <strong>H. A. Simon (1962).</strong>  
+    “The architecture of complexity.”  
+    <em>Proceedings of the American Philosophical Society, 106(6), 467–482.</em><br><br>
+
+    <strong>J. H. Holland (1992).</strong>  
+    <em>Complex Adaptive Systems: The Search for a Theory of Emergence.</em>  
+    Perseus Books / Addison-Wesley.<br><br>
+
+    <strong>Y. Bar-Yam (1997).</strong>  
+    <em>Dynamics of Complex Systems.</em>  
+    Addison-Wesley, Reading, MA.<br><br>
+
+    <strong>C. M. Macal and M. J. North (2010).</strong>  
+    “Tutorial on agent-based modelling and simulation.”  
+    <em>Journal of Simulation, 4(3), 151–162.</em>  
+    <a href="https://doi.org/10.1057/jos.2010.3" target="_blank">DOI link</a>
+  </p>
+</section>
+
+<section>
+  <h2>Further Reading & Learning Resources</h2>
+  <ul class="examples">
+    <li><a href="https://complexityexplorer.org/" target="_blank">Complexity Explorer (Santa Fe Institute)</a></li>
+    <li><a href="https://www.santafe.edu/" target="_blank">Santa Fe Institute — Center for Complex Systems Research</a></li>
+    <li><a href="https://mesa.readthedocs.io/" target="_blank">Mesa: Python Agent-Based Modeling Framework</a></li>
+    <li><a href="https://netlogo.com/" target="_blank">NetLogo</a> — accessible platform for building and exploring ABMs</li>
+  </ul>
+</section>
+
+<footer>
+  Last updated: October 2025 • Author: Sanjjamts Amartaivan
+</footer>
+
+</body>
+</html>
