@@ -17,7 +17,17 @@
       background: #fff; 
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
-    img, video { max-width: 100%; height: auto; margin: 1rem 0; }
+    img { max-width: 100%; height: auto; margin: 1rem 0; }
+    video {
+  width: 100vw;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  border-radius: 0;
+}
+
+    
     .section { margin-bottom: 2rem; }
     h1, h2 { color: #2c3e50; text-align: center; }
     p, ul { text-align: justify; }
@@ -30,23 +40,31 @@
 <body>
 
 <div class="container">
-  <p><a href="https://amartaivan-s.github.io/abms/">🏠 Back</a></p>
+  <p><a href="https://amartaivan-s.github.io/comp-sys-abms/">🏠 Back</a></p>
 
-  <div class="section">
-    <h2>Pedestrian-Car Crossing Simulation</h2>
-    <p>
-      This demo illustrates <strong>Agent-Based Modeling (ABM)</strong> applied to a complex urban crossing system. 
-      Autonomous <span style="color:green;">pedestrians</span> move towards their target points while avoiding collisions 
-      with <span style="color:red;">cars</span>. Lanes are controlled by <strong>traffic lights</strong>, 
-      and agents obey traffic rules dynamically.
-    </p>
-    <ul>
-      <li>Pedestrians start at designated points (top/bottom) and move to their targets.</li>
-      <li>Cars move along lanes with traffic lights controlling flow.</li>
-      <li>Collision avoidance occurs between pedestrians and vehicles.</li>
-      <li>The environment contains lanes, start/target points, and traffic lights.</li>
-    </ul>
-  </div>
+<div class="section">
+  <h2>Pedestrian-Car Crossing Simulation</h2>
+  <p>
+    This demo illustrates <strong>Agent-Based Modeling (ABM)</strong> applied to a complex urban crossing system. 
+    Autonomous <span style="color:green;">pedestrians</span> move towards their target points while avoiding collisions 
+    with <span style="color:red;">cars</span>. Lanes are controlled by <strong>traffic lights</strong>, 
+    and agents obey traffic rules dynamically.
+  </p>
+  <ul>
+    <li>Pedestrians start at designated points (top/bottom) and move to their targets.</li>
+    <li>Cars move along lanes with traffic lights controlling flow.</li>
+    <li>Collision avoidance occurs between pedestrians and vehicles.</li>
+    <li>The environment contains lanes, start/target points, and traffic lights.</li>
+  </ul>
+  <p>
+    The system can be made more complex by introducing <strong>pedestrian crossing behaviors</strong> that vary by individual characteristics, 
+    incorporating <strong>heterogeneity</strong> in walking speed, decision-making, and compliance levels. 
+    Additionally, <strong>dynamic environmental conditions</strong> such as time-dependent traffic flow, 
+    <strong>yellow light transitions</strong>, and <strong>car collision avoidance strategies</strong> can be added 
+    to enhance realism and enable multi-scenario experimentation.
+  </p>
+</div>
+
 
   <div class="section">
     <h2>Video Demonstration</h2>
@@ -66,29 +84,19 @@
 
   </div>
 
-  <div class="section">
-    <h2>About Mesa</h2>
-    <p>
-      This model was implemented with <a href="https://mesa.readthedocs.io/en/stable/" target="_blank">Mesa</a>, 
-      a Python framework for Agent-Based Modeling. 
-      Mesa allows building, visualizing, and analyzing ABMs in Python, capturing complex system behaviors 
-      through local agent interactions.
-    </p>
-  </div>
-
-  <div class="section">
-    <h2>About Solara</h2>
-    <p>
-      The interactive simulation interface is built using <a href="https://solara.dev/" target="_blank">Solara</a>, 
-      a Python framework for building web applications and dashboards. 
-      Solara allows you to create reactive, interactive visualizations with Python 
-      without writing JavaScript, integrating seamlessly with simulations, charts, and HTML/SVG elements.
-    </p>
-    <p>
-      In this demo, Solara is used to render the pedestrian-car crossing environment, 
+  <h2>🧰 Technologies Used</h2>
+  <ul class="tech-list">
+     <li>
+    <strong>Mesa</strong> – This model was implemented with <a href="https://mesa.readthedocs.io/en/stable/" target="_blank">Mesa</a>, 
+      a Python framework for Agent-Based Modeling.
+  </li>
+  <li>
+    <strong>Solara</strong> - The interactive simulation interface is built using <a href="https://solara.dev/" target="_blank">Solara</a>, 
+      a Python framework for building web applications and dashboards. Solara is used to render the pedestrian-car crossing environment, 
       including agents, lanes, traffic lights, and control widgets such as sliders and buttons.
-    </p>
-  </div>
+   </li>
+  </ul>
+  
 
   <div class="section">
     <h2>Download / View Source</h2>
