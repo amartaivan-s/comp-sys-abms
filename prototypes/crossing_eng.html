@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pedestrian-Car Crossing Simulation</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      line-height: 1.6; 
+      margin: 0; 
+      background: #f8f9fa;
+    }
+    .container {
+      max-width: 800px;   /* control content width */
+      margin: 0 auto;     /* centers the container */
+      padding: 2rem; 
+      background: #fff; 
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    img, video { max-width: 100%; height: auto; margin: 1rem 0; }
+    .section { margin-bottom: 2rem; }
+    h1, h2 { color: #2c3e50; text-align: center; }
+    p, ul { text-align: justify; }
+    a { color: #1f77b4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .citation { font-size: 0.9rem; color: #555; }
+    .home-link { text-align: center; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <p><a href="https://amartaivan-s.github.io/abms/">🏠 Back</a></p>
+
+  <div class="section">
+    <h2>Pedestrian-Car Crossing Simulation</h2>
+    <p>
+      This demo illustrates <strong>Agent-Based Modeling (ABM)</strong> applied to a complex urban crossing system. 
+      Autonomous <span style="color:green;">pedestrians</span> move towards their target points while avoiding collisions 
+      with <span style="color:red;">cars</span>. Lanes are controlled by <strong>traffic lights</strong>, 
+      and agents obey traffic rules dynamically.
+    </p>
+    <ul>
+      <li>Pedestrians start at designated points (top/bottom) and move to their targets.</li>
+      <li>Cars move along lanes with traffic lights controlling flow.</li>
+      <li>Collision avoidance occurs between pedestrians and vehicles.</li>
+      <li>The environment contains lanes, start/target points, and traffic lights.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Video Demonstration</h2>
+    <video autoplay muted loop playsinline>
+      <source src="../images/crossing_behavior.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+ 
+    <p>
+      <em>Figure:</em> Visualization of the crossing behavior simulation. 
+      <span style="color:green;">Green</span> represents active pedestrians, 
+      <span style="color:gray;">Gray</span> represents inactive pedestrians after collisions,
+      <span style="color:red;">Red</span> represents cars. 
+      Traffic lights regulate lane access. This demo demonstrates emergent patterns from agent interactions 
+      in a simple two-lane crossing environment.
+    </p>
+
+  </div>
+
+  <div class="section">
+    <h2>About Mesa</h2>
+    <p>
+      This model was implemented with <a href="https://mesa.readthedocs.io/en/stable/" target="_blank">Mesa</a>, 
+      a Python framework for Agent-Based Modeling. 
+      Mesa allows building, visualizing, and analyzing ABMs in Python, capturing complex system behaviors 
+      through local agent interactions.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>About Solara</h2>
+    <p>
+      The interactive simulation interface is built using <a href="https://solara.dev/" target="_blank">Solara</a>, 
+      a Python framework for building web applications and dashboards. 
+      Solara allows you to create reactive, interactive visualizations with Python 
+      without writing JavaScript, integrating seamlessly with simulations, charts, and HTML/SVG elements.
+    </p>
+    <p>
+      In this demo, Solara is used to render the pedestrian-car crossing environment, 
+      including agents, lanes, traffic lights, and control widgets such as sliders and buttons.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Download / View Source</h2>
+    <p>
+      The full source code for this demo is available on GitHub:  
+      <a href="https://github.com/amartaivan-s/abms/tree/main/crossing_behavior" 
+         target="_blank" 
+         style="display:inline-block; padding:0.5rem 1rem; background:#1f77b4; color:#fff; border-radius:5px; text-decoration:none;">
+         📥 Download / View Source
+      </a>
+    </p>
+  </div>
+
+</body>
+</html>
