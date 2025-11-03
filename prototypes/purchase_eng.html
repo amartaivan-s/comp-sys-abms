@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Customer–Supplier–Government Economic Simulation</title>
+  <style>
+    body { 
+      font-family: sans-serif; 
+      line-height: 1.6; 
+      margin: 0; 
+      background: #f8f9fa;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #fff;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    img, video { max-width: 100%; height: auto; margin: 1rem 0; }
+    .section { margin-bottom: 2rem; }
+    h1, h2 { color: #2c3e50; text-align: center; }
+    p, ul { text-align: justify; }
+    a { color: #1f77b4; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .home-link { text-align: center; margin-bottom: 2rem; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <p><a href="https://amartaivan-s.github.io/abms/">🏠 Back</a></p>
+
+  <div class="section">
+    <h2>Customer–Supplier–Government Economic Simulation</h2>
+    <p>
+      This demo showcases an <strong>Agent-Based Model (ABM)</strong> of an economic system where 
+      <strong>customers</strong>, <strong>suppliers</strong>, and the <strong>government</strong> 
+      interact dynamically. It illustrates how market stability, price fluctuations, 
+      and consumer satisfaction can emerge from decentralized decisions and feedback loops.
+    </p>
+    <ul>
+      <li><strong>Customers</strong> purchase products based on budget, preferences, and peer influence.</li>
+      <li><strong>Suppliers</strong> adjust prices and production levels based on demand and tax rates.</li>
+      <li><strong>Government</strong> collects taxes, provides subsidies, and regulates the market to maintain stability.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Video Demonstration</h2>
+    <video autoplay muted loop playsinline>
+      <source src="../images/economic_simulation.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <p>
+      <em>Figure:</em> Visualization of the <strong>economic ecosystem simulation</strong>. 
+      Circles represent <span style="color:#2ca02c;">customers</span>, 
+      squares represent <span style="color:#1f77b4;">suppliers</span>, and 
+      the central node symbolizes <span style="color:#d62728;">government regulation</span>. 
+      Arrows indicate interactions such as purchases, taxes, and subsidies.
+      The simulation demonstrates how simple local interactions lead to complex emergent 
+      economic dynamics.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>About the Model</h2>
+    <p>
+      Each step of the simulation represents an economic cycle:
+    </p>
+    <ul>
+      <li>Customers make purchase decisions based on product prices and social influence.</li>
+      <li>Suppliers produce goods, update prices, and report profits.</li>
+      <li>Government adjusts tax rates and redistributes income to balance the economy.</li>
+    </ul>
+    <p>
+      The model allows studying emergent market patterns such as supply-demand oscillations, 
+      collective consumption trends, and the effect of taxation policies on economic stability.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Implementation Details</h2>
+    <p>
+      The model is implemented using 
+      <a href="https://mesa.readthedocs.io/en/stable/" target="_blank">Mesa</a> 
+      for the agent-based simulation and 
+      <a href="https://solara.dev/" target="_blank">Solara</a> 
+      for the interactive visualization and web interface. 
+      <a href="https://plotly.com/python/" target="_blank">Plotly</a> 
+      is used to render dynamic charts such as product prices, government tax revenue, 
+      and customer satisfaction over time.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Download / View Source</h2>
+    <p>
+      The full source code for this demo is available on GitHub:
+    </p>
+    <p style="text-align:center;">
+      <a href="https://github.com/amartaivan-s/abms/tree/main/economic_simulation" 
+         target="_blank" 
+         style="display:inline-block; padding:0.6rem 1.2rem; background:#1f77b4; color:#fff; border-radius:5px; text-decoration:none;">
+         📥 Download / View Source
+      </a>
+    </p>
+  </div>
+
+</div>
+</body>
+</html>
